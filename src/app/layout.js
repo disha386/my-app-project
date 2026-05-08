@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +23,24 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+
+      {/*  ADD THIS HERE */}
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+      </head>
+
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+
+        {/* IMPORTANT WRAPPER */}
+        <main className="pt-24">
+          {children}
+        </main>
+      </body>
+
     </html>
   );
 }

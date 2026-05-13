@@ -1251,6 +1251,8 @@ html, body {
   background: #f5f5f5;
   padding: 80px 0;
   overflow: hidden;
+  padding: 80px 0 40px; 
+
 }
 
 /* ================= WRAPPER ================= */
@@ -1393,6 +1395,7 @@ html, body {
 
   display: flex;
   justify-content: center;
+  padding: 40px 40px 80px
 }
 
 .cta-box {

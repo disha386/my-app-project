@@ -24,10 +24,14 @@ export default function DiscoverSection() {
         <p className="secondary-text">
           Our 30+ years of expertise drive excellence in the Design, Preconstruction, Construction Management, Digital Twin, and Facilities Management of your project.
         </p>
+      <button className="know-more-btn">
 
-        <button className="know-more-btn">
-          Know More <span>→</span>
-        </button>
+  <span className="btn-text">Know More</span>
+
+  <span className="arrow-circle">→</span>
+
+</button>
+        
       </div>
 
       <div className="discover-right">

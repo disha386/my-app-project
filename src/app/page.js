@@ -7,6 +7,12 @@ import VerticalsSection from "./components/VerticalsSection";
 import OurProjectSection from "./components/OurProjectSection";
 import PeopleSection from "./components/PeopleSection";
 import SayHello from "./components/SayHello";
+import MoreAboutSection from "./components/MoreAboutSection";
+import CsrSection from "./components/CsrSection";
+import GlobalPresence from "./components/GlobalPresence";
+import CareerSection from "./components/CareerSection";
+import LatestUpdates from "./components/LatestUpdates";
+
 
 
 export default function Home() {
@@ -213,7 +219,17 @@ export default function Home() {
 
        {/* ================= SAY HELLO CTA ================= */}
       <SayHello />
-
+      {/* ================= MORE ABOUT PINNACLE ================= */}
+      <MoreAboutSection />
+      {/* ================= CSR ================= */}
+      <CsrSection />
+      {/* ================= GLOBAL PRESENCE ================= */}
+      <GlobalPresence />
+        {/* ================= CAREER SECTION ================= */}
+      <CareerSection />
+      {/* ================= LATEST UPDATES ================= */}
+      <LatestUpdates />
+      
     </div>
 
   );

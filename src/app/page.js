@@ -12,7 +12,7 @@ import CsrSection from "./components/CsrSection";
 import GlobalPresence from "./components/GlobalPresence";
 import CareerSection from "./components/CareerSection";
 import LatestUpdates from "./components/LatestUpdates";
-
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -229,6 +229,8 @@ export default function Home() {
       <CareerSection />
       {/* ================= LATEST UPDATES ================= */}
       <LatestUpdates />
+        {/* ================= FOOTER ================= */}
+      <Footer />
       
     </div>
 

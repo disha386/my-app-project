@@ -2,7 +2,9 @@
    
  @import "tailwindcss";
 
- 
+html {
+  overflow-y: scroll;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -1431,31 +1433,8 @@ html, body {
 }
 
 /* BUTTON */
-.cta-btn {
-  position: absolute;
+/* BUTTON */
 
-  left: 50%;
-  top: calc(100% - 160px);
-
-  transform: translateX(-50%);
-
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  background: white;
-  color: #0A2A66;
-
-  padding: 10px 20px;
-  border-radius: 999px;
-
-  font-weight: 600;
-
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-/* ARROW CIRCLE */
 .cta-arrow-circle {
   width: 26px;
   height: 26px;
@@ -2174,6 +2153,9 @@ html, body {
   margin-top: 70px;
 }
 
+.second-row .img-small {
+  transform: translateY(140px);
+}
 /* ================= HEADING ================= */
 
 .latest-heading {

@@ -703,10 +703,9 @@ export default function Navbar() {
             Login
           </span>
 
-          <button className="bg-orange-500 text-black px-6 py-2 rounded-lg hover:bg-orange-600 transition">
-            Get in Touch
-          </button>
-
+       <button className="bg-amber-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-amber-600 transition duration-300 shadow-md">
+  Get in Touch
+</button>
         </div>
 
       </div>

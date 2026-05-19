@@ -19,23 +19,35 @@ export default function SayHello() {
     const halfW = btnRect.width / 2;
     const halfH = btnRect.height / 2;
 
-    const padding = 10;
+    const padding = 20;
 
-    x = Math.max(halfW + padding, Math.min(x, rect.width - halfW - padding));
-    y = Math.max(halfH + padding, Math.min(y, rect.height - halfH - padding));
+    x = Math.max(
+      halfW + padding,
+      Math.min(x, rect.width - halfW - padding)
+    );
 
-    btn.style.left = x + "px";
-    btn.style.top = y + "px";
-    btn.style.transform = "translate(-50%, -50%)";
+    y = Math.max(
+      halfH + padding,
+      Math.min(y, rect.height - halfH - padding)
+    );
+
+  btn.style.left = `${x}px`;
+btn.style.top = `${y}px`;
+
+btn.style.background = "#ca8a04";
+btn.style.color = "black";
   };
 
-  const handleMouseLeave = () => {
-    const btn = btnRef.current;
+ const handleMouseLeave = () => {
+  const btn = btnRef.current;
 
-    btn.style.left = "50%";
-    btn.style.top = "calc(100% - 90px)";
-    btn.style.transform = "translateX(-50%)";
-  };
+  btn.style.left = "50%";
+  btn.style.top = "calc(100% - 90px)";
+
+  btn.style.background = "white";
+  btn.style.color = "#0A2A66";
+};
+
 
   return (
     <section className="cta-wrapper">
@@ -54,10 +66,14 @@ export default function SayHello() {
         </div>
 
         {/* BUTTON */}
-        <div className="cta-btn" ref={btnRef}>
+        <button className="cta-btn" ref={btnRef}>
           <span>Reach Out Today</span>
-          <div className="cta-arrow-circle">→</div>
-        </div>
+
+          <div className="cta-arrow-circle">
+            →
+          </div>
+        </button>
+
       </div>
     </section>
   );

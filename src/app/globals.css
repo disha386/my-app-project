@@ -1438,7 +1438,7 @@ html, body {
   left: 50%;
   top: calc(100% - 90px);
 
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   display: inline-flex;
   align-items: center;
@@ -1458,12 +1458,11 @@ html, body {
   white-space: nowrap;
 
   transition:
-    left 0.18s ease-out,
-    top 0.18s ease-out,
-    transform 0.18s ease-out;
+    left 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: left, top;
 }
-
-
 
 .cta-arrow-circle {
   width: 26px;

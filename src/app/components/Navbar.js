@@ -182,7 +182,7 @@ export default function Navbar() {
 
     {/* CAD */}
    {/* CAD */}
-{/* CAD (LEFT MENU ONLY - like Verticals) */}
+
 <div
   onClick={() => setExpertiseContent("cad")}
   className="cursor-pointer"
@@ -226,7 +226,7 @@ export default function Navbar() {
     <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-box text-xl"></i>
+        <i className="bi bi-box text-2xl"></i>
         <span>3D Modelling</span>
       </div>
 
@@ -236,22 +236,22 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-building text-xl"></i>
+        <i className="bi bi-building text-2xl"></i>
         <span>Digital Prefabrication</span>
       </div>
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-file-earmark-text text-xl"></i>
+        <i className="bi bi-file-earmark-text text-2xl"></i>
         <span>Construction Documentation</span>
       </div>
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-diagram-3 text-xl"></i>
+        <i className="bi bi-diagram-3 text-2xl"></i>
         <span>Constructability Review</span>
       </div>
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-intersect text-xl"></i>
+        <i className="bi bi-intersect text-2xl"></i>
         <span>Clash Coordination</span>
       </div>
 
@@ -262,32 +262,32 @@ export default function Navbar() {
   <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-building text-xl"></i>
+      <i className="bi bi-building text-2xl"></i>
       <span>Architectural</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-bricks text-xl"></i>
+      <i className="bi bi-bricks text-2xl"></i>
       <span>Structural</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-gear text-xl"></i>
+      <i className="bi bi-gear text-2xl"></i>
       <span>Mechanical Engineering Design</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-lightning-charge text-xl"></i>
+      <i className="bi bi-lightning-charge text-2xl"></i>
       <span>Electrical</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-fire text-xl"></i>
+      <i className="bi bi-fire text-2xl"></i>
       <span>Fire Protection</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-thermometer-sun text-xl"></i>
+      <i className="bi bi-thermometer-sun text-2xl"></i>
       <span>Building Energy</span>
     </div>
 
@@ -298,32 +298,32 @@ export default function Navbar() {
   <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-megaphone text-xl"></i>
+      <i className="bi bi-megaphone text-2xl"></i>
       <span>Marketing / BID Presentations</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-film text-xl"></i>
+      <i className="bi bi-film text-2xl"></i>
       <span>4D & 5D Construction Simulation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-calculator text-xl"></i>
+      <i className="bi bi-calculator text-2xl"></i>
       <span>Quantity Surveying</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-geo-alt text-xl"></i>
+      <i className="bi bi-geo-alt text-2xl"></i>
       <span>GIS</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-cash-stack text-xl"></i>
+      <i className="bi bi-cash-stack text-2xl"></i>
       <span>Pre-bid Estimation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-rulers text-xl"></i>
+      <i className="bi bi-rulers text-2xl"></i>
       <span>Laser Scanning</span>
     </div>
 
@@ -333,33 +333,125 @@ export default function Navbar() {
   <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-gear-wide-connected text-xl"></i>
+      <i className="bi bi-gear-wide-connected text-2xl"></i>
       <span>Implementation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-database text-xl"></i>
+      <i className="bi bi-database text-2xl"></i>
       <span>Data Management</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-activity text-xl"></i>
+      <i className="bi bi-activity text-2xl"></i>
       <span>Asset Monitoring</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-leaf text-xl"></i>
+      <i className="bi bi-leaf text-2xl"></i>
       <span>Sustainability Applications</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-card-list text-xl"></i>
+      <i className="bi bi-card-list text-2xl"></i>
       <span>COBie and Asset Register</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-camera-reels text-xl"></i>
+      <i className="bi bi-camera-reels text-2xl"></i>
       <span>Scan to BIM</span>
+    </div>
+
+  </div>
+)}
+
+
+{expertiseContent === "cad" && (
+  <div className="grid grid-cols-2 gap-y-6 gap-x-12">
+
+    {/* PDF to CAD */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-file-earmark-pdf text-2xl"></i>
+      <span>PDF to CAD Conversion</span>
+    </div>
+
+    {/* Indexing */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-tags text-2xl"></i>
+      <span>Indexing & Renaming</span>
+    </div>
+
+    {/* Redline */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-pencil-square text-2xl"></i>
+      <span>Redline Mark-ups / As-Built</span>
+    </div>
+
+    {/* Landscaping */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-tree text-2xl"></i>
+      <span>Landscaping & Pool Design Assistance</span>
+    </div>
+
+    {/* Shop Drawing */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-rulers text-2xl"></i>
+      <span>Shop Drawing (Inventor / SolidWorks)</span>
+    </div>
+
+  </div>
+)} 
+
+
+{expertiseContent === "verticals" && (
+  <div className="grid grid-cols-2 gap-y-6 gap-x-12">
+
+    {/* Airport */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-airplane text-2xl"></i>
+      <span>Airport</span>
+    </div>
+
+    {/* Data Centre */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-hdd-network text-2xl"></i>
+      <span>Data Centre</span>
+    </div>
+
+    {/* Stadium */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-trophy text-2xl"></i>
+      <span>Stadium</span>
+    </div>
+
+    {/* Semiconductor */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-cpu text-2xl"></i>
+      <span>Semiconductor</span>
+    </div>
+
+    {/* Industrial */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-building-gear text-2xl"></i>
+      <span>Industrial</span>
+    </div>
+
+    {/* Infrastructure */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-buildings text-2xl"></i>
+      <span>Infrastructure</span>
+    </div>
+
+    {/* Rail & Road */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-train-front text-2xl"></i>
+      <span>Rail & Road</span>
+    </div>
+
+    {/* Healthcare */}
+    <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
+      <i className="bi bi-hospital text-2xl"></i>
+      <span>Healthcare</span>
     </div>
 
   </div>
@@ -368,34 +460,126 @@ export default function Navbar() {
 </div>
 
           {/* RIGHT GREY SIDE */}
-          <div className="bg-gray-200 p-10 w-[38%]">
+        {/* RIGHT GREY SIDE */}
+{/* RIGHT GREY SIDE */}
+<div className="bg-gray-200 p-8 w-[38%]">
 
-            <h3 className="text-lg font-semibold text-black">
-              Insights
-            </h3>
+  <div className="grid grid-cols-2 gap-x-8">
 
-            <p className="mt-4 text-sm text-gray-700 hover:text-black cursor-pointer">
-              Latest Trends
-            </p>
+    {/* LEFT COLUMN */}
+    <div>
 
-            <p className="mt-3 text-sm text-gray-700 hover:text-black cursor-pointer">
-              Case Studies
-            </p>
+      <h3 className="text-[17px] font-semibold text-black mb-5">
+        Consulting
+      </h3>
 
-            <p className="mt-3 text-sm text-gray-700 hover:text-black cursor-pointer">
-              Whitepapers
-            </p>
+      <div className="space-y-4 text-[14px] font-medium text-gray-800">
 
-          </div>
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-mortarboard-fill text-sky-600 text-lg"></i>
+          <span>Training</span>
+        </div>
 
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-cpu-fill text-sky-600 text-lg"></i>
+          <span>Automation</span>
+        </div>
+
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-grid-1x2-fill text-sky-600 text-lg"></i>
+          <span>BIM Template & Content Creation</span>
+        </div>
+
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-diagram-3-fill text-sky-600 text-lg"></i>
+          <span>BIM Execution Plan</span>
+        </div>
+
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-kanban-fill text-sky-600 text-lg"></i>
+          <span>BIM Management</span>
+        </div>
+
+        <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+          <i className="bi bi-patch-check-fill text-sky-600 text-lg"></i>
+          <span>ISO 19650</span>
         </div>
 
       </div>
 
     </div>
-  )}
+
+    {/* RIGHT COLUMN */}
+    {/* RIGHT COLUMN */}
+<div>
+
+  <h3 className="text-[17px] font-semibold text-black mb-5">
+    Clients
+  </h3>
+
+  <div className="space-y-4 text-[14px] font-medium text-gray-800">
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-building-fill text-sky-600 text-lg"></i>
+      <span>Architects</span>
+    </div>
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-gear-fill text-sky-600 text-lg"></i>
+      <span>Engineers</span>
+    </div>
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-hammer text-sky-600 text-lg"></i>
+      <span>Contractors</span>
+    </div>
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-person-badge-fill text-sky-600 text-lg"></i>
+      <span>Owners</span>
+    </div>
+
+  </div>
+
+  {/* AUTODESK HEADING */}
+  <h3 className="text-[17px] font-semibold text-black mt-7 mb-5">
+    Autodesk Solution
+  </h3>
+
+  <div className="space-y-4 text-[14px] font-medium text-gray-800">
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-shop text-sky-600 text-lg"></i>
+      <span>Autodesk Reseller</span>
+    </div>
+
+    <div className="flex items-center gap-2 hover:text-black cursor-pointer transition leading-tight">
+      <i className="bi bi-journal-bookmark-fill text-sky-600 text-lg"></i>
+      <span>Autodesk Training Center</span>
+    </div>
+
+  </div>
 
 </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+)} 
+
+</div> {/* relative z-50 */}
 
           {/* PORTFOLIO */}
           <div className="relative z-50">

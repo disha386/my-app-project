@@ -25,7 +25,9 @@ export default function Navbar() {
     <div className="w-full fixed top-0 left-0 bg-white z-50">
 
       {/* NAVBAR ROW */}
-      <div className="flex justify-center py-6 px-10 relative z-50">
+    <div className="flex justify-center py-6 px-10 relative z-50">
+
+      
 
         {/* CENTER MENU */}
         <div className="flex gap-4 text-[15px] text-black items-center relative z-50">
@@ -92,11 +94,9 @@ export default function Navbar() {
         <div className="w-full flex min-h-[380px] overflow-hidden">
 
           {/* LEFT BLUE SIDE */}
- <div className="bg-blue-900 text-white p-10 w-[20%] font-sans">
+ <div className="bg-blue-900 text-white p-10 w-[24%] font-sans">
 
-  <h2 className="text-2xl font-semibold mb-6">
-    Our Expertise
-  </h2>
+  
 
   <div className="space-y-3">
 
@@ -105,7 +105,7 @@ export default function Navbar() {
       onClick={() => setExpertiseContent("bim")}
       className="cursor-pointer"
     >
-      <p className={`px-2 py-1 relative transition ${
+      <p className={`px-2 py-1 text-[17px] font-medium relative transition ${
         expertiseContent === "bim"
           ? "text-black bg-white rounded"
           : "text-white"
@@ -125,7 +125,7 @@ export default function Navbar() {
       onClick={() => setExpertiseContent("engineering")}
       className="cursor-pointer"
     >
-      <p className={`px-2 py-1 relative transition ${
+      <p className={`px-2 py-1 text-[17px] font-medium relative transition ${
         expertiseContent === "engineering"
           ? "text-black bg-white rounded"
           : "text-white"
@@ -145,7 +145,7 @@ export default function Navbar() {
       onClick={() => setExpertiseContent("digital")}
       className="cursor-pointer"
     >
-      <p className={`px-2 py-1 relative transition ${
+      <p className={`px-2 py-1 text-[17px] font-medium relative transition ${
         expertiseContent === "digital"
           ? "text-black bg-white rounded"
           : "text-white"
@@ -165,7 +165,7 @@ export default function Navbar() {
       onClick={() => setExpertiseContent("twin")}
       className="cursor-pointer"
     >
-      <p className={`px-2 py-1 relative transition ${
+      <p className={`px-2 py-1 text-[17px] font-medium relative transition ${
         expertiseContent === "twin"
           ? "text-black bg-white rounded"
           : "text-white"
@@ -188,7 +188,7 @@ export default function Navbar() {
   className="cursor-pointer"
 >
   <div
-    className={`px-3 py-2 rounded transition ${
+    className={`px-3 py-2 text-[17px] font-medium rounded transition ${
       expertiseContent === "cad"
         ? "bg-white text-black font-semibold"
         : "text-white hover:bg-blue-800"
@@ -204,7 +204,7 @@ export default function Navbar() {
       onClick={() => setExpertiseContent("verticals")}
       className="cursor-pointer"
     >
-      <p className={`px-2 py-1 relative transition ${
+      <p className={`px-2 py-1 text-[17px] font-medium relative transition ${
         expertiseContent === "verticals"
           ? "text-black bg-white rounded"
           : "text-white"
@@ -220,13 +220,26 @@ export default function Navbar() {
   </div>
 </div>
           {/* MIDDLE WHITE SIDE */}
-          <div className="bg-white p-16 text-black w-[54%]">
+         <div className="bg-white p-16 text-black w-[54%]">
+
+  {/* TOP TITLE */}
+  <div className="text-blue-900 font-semibold text-[17px] mb-6 ml-2 -mt-8">
+    Service &gt;{" "}
+
+    {expertiseContent === "bim" && "BIM Services"}
+    {expertiseContent === "engineering" && "Engineering Design"}
+    {expertiseContent === "digital" && "Digital Construction"}
+    {expertiseContent === "twin" && "Digital Twin"}
+    {expertiseContent === "cad" && "2D CAD & Drafting"}
+    {expertiseContent === "verticals" && "Verticals"}
+
+  </div>
 
        {expertiseContent === "bim" && (
     <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
       <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-        <i className="bi bi-box text-2xl"></i>
+        <i className="bi bi-box text-3xl"></i>
         <span>3D Modelling</span>
       </div>
 
@@ -267,27 +280,27 @@ export default function Navbar() {
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-bricks text-2xl"></i>
+      <i className="bi bi-bricks text-3xl"></i>
       <span>Structural</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-gear text-2xl"></i>
+      <i className="bi bi-gear text-3xl"></i>
       <span>Mechanical Engineering Design</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-lightning-charge text-2xl"></i>
+      <i className="bi bi-lightning-charge text-3xl"></i>
       <span>Electrical</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-fire text-2xl"></i>
+      <i className="bi bi-fire text-3xl"></i>
       <span>Fire Protection</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-thermometer-sun text-2xl"></i>
+      <i className="bi bi-thermometer-sun text-3xl"></i>
       <span>Building Energy</span>
     </div>
 
@@ -303,27 +316,27 @@ export default function Navbar() {
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-film text-2xl"></i>
+      <i className="bi bi-film text-3xl"></i>
       <span>4D & 5D Construction Simulation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-calculator text-2xl"></i>
+      <i className="bi bi-calculator text-3xl"></i>
       <span>Quantity Surveying</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-geo-alt text-2xl"></i>
+      <i className="bi bi-geo-alt text-3xl"></i>
       <span>GIS</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-cash-stack text-2xl"></i>
+      <i className="bi bi-cash-stack text-3xl"></i>
       <span>Pre-bid Estimation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-rulers text-2xl"></i>
+      <i className="bi bi-rulers text-3xl"></i>
       <span>Laser Scanning</span>
     </div>
 
@@ -333,32 +346,32 @@ export default function Navbar() {
   <div className="grid grid-cols-2 gap-y-6 gap-x-12">
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-gear-wide-connected text-2xl"></i>
+      <i className="bi bi-gear-wide-connected text-3xl"></i>
       <span>Implementation</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-database text-2xl"></i>
+      <i className="bi bi-database text-3xl"></i>
       <span>Data Management</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-activity text-2xl"></i>
+      <i className="bi bi-activity text-3xl"></i>
       <span>Asset Monitoring</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-leaf text-2xl"></i>
+      <i className="bi bi-leaf text-3xl"></i>
       <span>Sustainability Applications</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-card-list text-2xl"></i>
+      <i className="bi bi-card-list text-3xl"></i>
       <span>COBie and Asset Register</span>
     </div>
 
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer">
-      <i className="bi bi-camera-reels text-2xl"></i>
+      <i className="bi bi-camera-reels text-3xl"></i>
       <span>Scan to BIM</span>
     </div>
 
@@ -371,31 +384,31 @@ export default function Navbar() {
 
     {/* PDF to CAD */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-file-earmark-pdf text-2xl"></i>
+      <i className="bi bi-file-earmark-pdf text-3xl"></i>
       <span>PDF to CAD Conversion</span>
     </div>
 
     {/* Indexing */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-tags text-2xl"></i>
+      <i className="bi bi-tags text-3xl"></i>
       <span>Indexing & Renaming</span>
     </div>
 
     {/* Redline */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-pencil-square text-2xl"></i>
+      <i className="bi bi-pencil-square text-3xl"></i>
       <span>Redline Mark-ups / As-Built</span>
     </div>
 
     {/* Landscaping */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-tree text-2xl"></i>
+      <i className="bi bi-tree text-3xl"></i>
       <span>Landscaping & Pool Design Assistance</span>
     </div>
 
     {/* Shop Drawing */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-rulers text-2xl"></i>
+      <i className="bi bi-rulers text-3xl"></i>
       <span>Shop Drawing (Inventor / SolidWorks)</span>
     </div>
 
@@ -408,49 +421,49 @@ export default function Navbar() {
 
     {/* Airport */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-airplane text-2xl"></i>
+      <i className="bi bi-airplane text-3xl"></i>
       <span>Airport</span>
     </div>
 
     {/* Data Centre */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-hdd-network text-2xl"></i>
+      <i className="bi bi-hdd-network text-3xl"></i>
       <span>Data Centre</span>
     </div>
 
     {/* Stadium */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-trophy text-2xl"></i>
+      <i className="bi bi-trophy text-3xl"></i>
       <span>Stadium</span>
     </div>
 
     {/* Semiconductor */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-cpu text-2xl"></i>
+      <i className="bi bi-cpu text-3xl"></i>
       <span>Semiconductor</span>
     </div>
 
     {/* Industrial */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-building-gear text-2xl"></i>
+      <i className="bi bi-building-gear text-3xl"></i>
       <span>Industrial</span>
     </div>
 
     {/* Infrastructure */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-buildings text-2xl"></i>
+      <i className="bi bi-buildings text-3xl"></i>
       <span>Infrastructure</span>
     </div>
 
     {/* Rail & Road */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-train-front text-2xl"></i>
+      <i className="bi bi-train-front text-3xl"></i>
       <span>Rail & Road</span>
     </div>
 
     {/* Healthcare */}
     <div className="flex items-center gap-3 hover:text-blue-900 cursor-pointer transition">
-      <i className="bi bi-hospital text-2xl"></i>
+      <i className="bi bi-hospital text-3xl"></i>
       <span>Healthcare</span>
     </div>
 
@@ -570,10 +583,6 @@ export default function Navbar() {
   </div>
 
 </div>
-
-
-
-
 
 
 

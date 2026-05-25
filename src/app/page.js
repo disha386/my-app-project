@@ -22,9 +22,11 @@ export default function Home() {
     <div className="hero-section">
 
       {/* LOGO */}
-      <div className="navbar-logo">
-        <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1774502957/header-logo_rdttb2.webp" />
-      </div>
+<div className="navbar-logo">
+  <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1774502957/header-logo_rdttb2.webp" />
+</div>
+
+
 
       {/* HERO TEXT */}
       <div className="hero-title text-animate">

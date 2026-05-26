@@ -364,29 +364,32 @@ export default function Footer() {
 </div>
         {/* ================= BOTTOM ================= */}
 <div className="footer-divider bottom-divider"></div>
-      <div className="footer-bottom">
+      <div className="footer-bottom-wrapper">
 
-  <span>
-    © 2026 pinnacleinfotech.com. All rights reserved.
-  </span>
+  <div className="footer-bottom">
 
-  <span className="footer-separator">|</span>
+    <span>
+      © 2026 pinnacleinfotech.com. All rights reserved.
+    </span>
 
-  <span className="digital-partner">
-    Digital Partner <strong>Indus Net Technologies</strong>
-  </span>
+    <span className="footer-separator">|</span>
+
+    <span className="digital-partner">
+      Digital Partner <strong>Indus Net Technologies</strong>
+    </span>
+
+  </div>
+
+  <div className="footer-policy">
+
+    <span>Privacy Policy</span>
+    <span>Terms & Conditions</span>
+    <span>Cookies Policy</span>
+    <span>Sitemap</span>
+
+  </div>
 
 </div>
-
-        <div className="footer-policy">
-
-          <span>Privacy Policy</span>
-          <span>Terms & Conditions</span>
-          <span>Cookies Policy</span>
-          <span>Sitemap</span>
-
-        </div>
-
       </div>
 
     </footer>

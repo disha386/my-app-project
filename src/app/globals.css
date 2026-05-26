@@ -485,6 +485,8 @@ html, body {
   margin-top: 10px;
 }
 
+
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .service-section {
@@ -2806,4 +2808,28 @@ html, body {
   line-height: 1.7;
 
   margin: 0;
+}
+.footer-bottom-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+.footer-policy {
+  display: flex;
+  gap: 20px;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-policy {
+  margin-left: auto;
 }

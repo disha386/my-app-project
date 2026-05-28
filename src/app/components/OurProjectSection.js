@@ -16,44 +16,70 @@ export default function OurProjectSection() {
     let scrollLeft;
 
     const mouseDown = (e) => {
+
       isDown = true;
+
       startX = e.pageX - slider.offsetLeft;
       scrollLeft = slider.scrollLeft;
+
       slider.style.cursor = "grabbing";
     };
 
     const mouseLeave = () => {
+
       isDown = false;
+
       slider.style.cursor = "grab";
     };
 
     const mouseUp = () => {
+
       isDown = false;
+
       slider.style.cursor = "grab";
     };
 
     const mouseMove = (e) => {
+
       if (!isDown) return;
 
       e.preventDefault();
 
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1.5;
+
+      const walk = (x - startX) * 0.25;
 
       slider.scrollLeft = scrollLeft - walk;
     };
 
     const handleScroll = () => {
+
       const maxScroll = slider.scrollWidth / 2;
 
       if (slider.scrollLeft >= maxScroll) {
+
         slider.scrollLeft -= maxScroll;
       }
 
       if (slider.scrollLeft <= 0) {
+
         slider.scrollLeft += maxScroll;
       }
     };
+
+    /* ================= IMAGE HOVER SLIDE ================= */
+
+    const handleHoverMove = () => {
+
+      slider.scrollLeft += 420;
+    };
+
+    const cards = slider.querySelectorAll(".project-card");
+
+    cards.forEach((card) => {
+
+      card.addEventListener("mouseenter", handleHoverMove);
+    });
 
     slider.addEventListener("mousedown", mouseDown);
     slider.addEventListener("mouseleave", mouseLeave);
@@ -62,11 +88,17 @@ export default function OurProjectSection() {
     slider.addEventListener("scroll", handleScroll);
 
     return () => {
+
       slider.removeEventListener("mousedown", mouseDown);
       slider.removeEventListener("mouseleave", mouseLeave);
       slider.removeEventListener("mouseup", mouseUp);
       slider.removeEventListener("mousemove", mouseMove);
       slider.removeEventListener("scroll", handleScroll);
+
+      cards.forEach((card) => {
+
+        card.removeEventListener("mouseenter", handleHoverMove);
+      });
     };
 
   }, []);
@@ -124,11 +156,12 @@ export default function OurProjectSection() {
 
         <button className="know-more-btn">
 
-  <span className="btn-text">View All Projects</span>
+          <span className="btn-text">View All Projects</span>
 
-  <span className="arrow-circle">→</span>
+          <span className="arrow-circle">→</span>
 
-</button>
+        </button>
+
       </div>
 
     </section>

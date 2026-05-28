@@ -1,7 +1,5 @@
 "use client";
 
-
-
 const verticals = [
   {
     title: "Airport",

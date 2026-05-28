@@ -25,6 +25,7 @@ export default function MovingLogoBar() {
   ];
 
   return (
+      <>
     <div className="logo-bar">
 
       {/* TITLE */}
@@ -44,10 +45,28 @@ export default function MovingLogoBar() {
           ].map((logo, i) => (
             <img key={i} src={logo} alt="logo" />
           ))}
-        </div>
+                </div>
 
       </div>
 
+     
     </div>
+
+
+
+ {/* TEXT CONTENT */}
+    <div className="what-we-do-content">
+
+      <h2>
+        What We Do
+      </h2>
+
+      <p>
+        Adhering to international construction codes and standards,
+        our range of services includes the following.
+      </p>
+
+    </div>
+     </>
   );
 }

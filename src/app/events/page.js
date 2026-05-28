@@ -386,8 +386,33 @@ export default function EventsPage() {
 </div>
 
 {/* BLUE BAR */}
-<div className="px-20 lg:px-32 mt-20">
-  <div className="bg-[#0A2A66] h-[220px] rounded-[24px]"></div>
+{/* BLUE BAR */}
+
+{/* BLUE BAR */}
+<div className="px-20 lg:px-32 mt-20 mb-24">
+
+  <div className="bg-[#0A2A66] h-[260px] rounded-[24px] px-14 py-11">
+
+    <h2 className="text-white text-[32px] font-semibold font-serif">
+      Reach Out To Us
+    </h2>
+
+    <p className="text-[#C7D4EA] text-[18px] mt-4 max-w-[520px] leading-[1.7]">
+      We're ready to answer any questions you have.
+    </p>
+
+    <button className="mt-8 bg-white text-[#0A2A66] px-6 py-3 rounded-full flex items-center gap-3 font-semibold">
+
+      Get In Touch
+
+      <span className="w-8 h-8 rounded-full bg-[#0A2A66] text-white flex items-center justify-center">
+        →
+      </span>
+
+    </button>
+
+  </div>
+
 </div>
 
 </div>

@@ -44,8 +44,8 @@ export default function CsrSection() {
   </div>
 
   <div className="csr-text">
-    Nurturing the young minds to become<br />
-    innovators through experiential science <br />
+    Nurturing the young minds to<br/> become
+    innovators through <br/> experiential science 
     learning and innovation.
   </div>
 

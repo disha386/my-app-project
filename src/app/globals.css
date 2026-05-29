@@ -556,507 +556,251 @@ html, body {
 /* ================= OUR VERTICALS ================= */
 /* ================= OUR VERTICALS ================= */
 
-
-.verticals-wrapper {
-  width: 100%;
-  background: #f5f5f5;
-
-  padding: 60px 0 120px;
-  margin-top: 40px;
-}
-
-/* ================= CONTAINER ================= */
-
-.verticals-container {
-  max-width: 1200px;
-
-  margin: auto;
-  padding: 0 40px;
-
-  position: relative;
-
-  isolation: isolate;
-}
-
-/* ================= HEADING ================= */
-
-.verticals-heading {
-  text-align: center;
-
-  max-width: 1000px;
-  margin: 0 auto 60px;
-}
-
-.verticals-heading h2 {
-  color: #002366;
-
-  font-size: 38px;
-  font-weight: 800;
-
-  font-family: Georgia, serif;
-
-  margin-bottom: 14px;
-}
-
-.verticals-heading p {
-  color: #4a6fa5;
-
-  font-size: 22px;
-  font-weight: 500;
-
-  line-height: 1.5;
-}
-
-/* ================= EACH ROW ================= */
-
 .vertical-section {
   position: relative;
-
+  padding: 25px 0;
+  margin-bottom: 20px;
+  height: 120px;
+  overflow: visible;
+  border-radius: 12px;
+  transition: background 0.5s ease;
   display: flex;
   align-items: center;
-
-  min-height: 105px;
-
-  overflow: visible;
-
-  margin-bottom: 0px;
-
-  padding: 0 0 14px 0;
-
-  z-index: 2;
-
-  background: #f5f5f5;
 }
-
-/* BIG HOVER CARD */
-
-.vertical-section:hover {
-  height: 300px;
-  
-}
-
-/* ================= BLUE CARD ================= */
 
 .vertical-section::before {
   content: "";
-
   position: absolute;
-
-  left: -45px;
-  right: -45px;
-
-  top: 0;
-  bottom: 0;
-
-  background: linear-gradient(
-    90deg,
-    #2c3e66,
-    #5a7fcf
-  );
-
+  left: -30px;
+  right: -30px;
+  top: 50%;
+  height: 80%;
+  transform: translateY(-50%) scaleY(0.8);
+  transform-origin: center;
+  background: linear-gradient(90deg, #2c3e66, #5a7fcf);
   opacity: 0;
-
-  border-radius: 30px;
-
-  transition:
-    opacity 0.35s ease,
-    box-shadow 0.35s ease;
-
+  transition: all 0.4s ease;
+  border-radius: 20px;
   z-index: 1;
 }
-
-/* SHOW BLUE CARD */
-
-/* SHOW BLUE CARD */
-
-/* SHOW BLUE CARD */
 
 .vertical-section:hover::before {
-  content: "";
-
-  position: absolute;
-
-  left: -45px;
-  right: -45px;
-
-  top: 3px;
-  bottom: 0px;
-
-  background: linear-gradient(
-    90deg,
-    #2c3e66,
-    #5a7fcf
-  );
-
   opacity: 1;
-
-  border-radius: 30px;
-
-  box-shadow:
-    0 24px 55px rgba(44, 62, 102, 0.38);
-
-  z-index: 1;
+  transform: translateY(-50%) scaleY(2);
+  box-shadow: 0 20px 50px rgba(44, 62, 102, 0.35);
 }
-/* ================= DIVIDER ================= */
 
 .vertical-section::after {
   content: "";
-
   position: absolute;
-
   left: 40px;
   right: 40px;
-
   bottom: 0;
-
-  height: 1px;
-
+  height: 0.5px;
   background: rgba(0, 0, 0, 0.15);
-
-  transition: 0.3s ease;
-
-  z-index: 2;
+  z-index: 0;
+  transition: opacity 0.3s ease;
 }
 
 .vertical-section:hover::after {
   opacity: 0;
 }
 
-/* ================= INNER ROW ================= */
-
 .vertical-row {
   display: flex;
   align-items: center;
-
   gap: 60px;
-
-  width: 100%;
-
-  height: 100%;
-
   padding-left: 80px;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  width: 100%;
   position: relative;
-
-  z-index: 3;
+  z-index: 5;
 }
-/* ================= LEFT SIDE ================= */
-/* ================= LEFT SIDE ================= */
 
 .title {
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 14px;
-
-  position: absolute;
-
-  left: 80px;
-
-  top: calc(50% + 18px);
-  transform: translateY(-50%);
-
-  color: #4a6fa5;
-
-  transition: all 0.35s ease;
-
-  z-index: 4;
-
-  width: 520px;
-}
-.title i {
-  font-size: 28px;
-
-  transition: 0.3s ease;
-
-  flex-shrink: 0;
-}
-
-.title-text {
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  line-height: 1.2;
-
-  padding-top: 2px;
-}
-.main-title {
-  font-size: 24px;
-
-  font-weight: 700;
-
-  line-height: 1.1;
-
-  display: block;
-}
-/* ================= SUB TEXT ================= */
-
-/* ================= SUB TEXT ================= */
-.sub-text {
-  margin-top: 8px;
-
-  font-size: 18px;
-  font-weight: 400;
-
-  line-height: 1.5;
-
-  max-width: 420px;
-
-  white-space: normal;
-
-  color: white;
-
   position: relative;
-
-  top: 10px;
-
-  opacity: 0;
-
-  visibility: hidden;
-
-  transform: translateY(12px);
-
-  max-height: 0;
-
-  overflow: hidden;
-
-  transition:
-    opacity 0.35s ease,
-    transform 0.35s ease,
-    max-height 0.35s ease,
-    visibility 0s linear 0.35s;
+  z-index: 5;
+  transition: color 0.3s ease;
 }
-
-/* SHOW SUBTEXT */
-
-.vertical-section:hover .sub-text {
-  opacity: 1;
-
-  visibility: visible;
-
-  transform: translateY(0);
-
-  max-height: 120px;
-
-  transition:
-    opacity 0.35s ease,
-    transform 0.35s ease,
-    max-height 0.35s ease,
-    visibility 0s;
-}
-
-/* WHITE TEXT */
 
 .vertical-section:hover .title,
 .vertical-section:hover .title i {
-  color: white;
+  color: white !important;
+  transition: color 0.3s ease;
 }
 
-/* ================= IMAGE ================= */
-/* ================= IMAGE ================= */
-
-.vertical-content {
-  position: absolute;
-
-  right: 120px;
-  top: 58%;
-
-  transform: translateY(-50%);
-
+.sub-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a6fa5;
+  line-height: 1.5;
   opacity: 0;
   visibility: hidden;
-
-  transition: all 0.4s ease;
-
-  z-index: 3;
+  transform: translateY(6px);
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-/* SHOW IMAGE */
+.vertical-section:hover .sub-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  height: auto;
+  color: white !important;
+}
+
+.vertical-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  overflow: visible;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
 
 .vertical-section:hover .vertical-content {
   opacity: 1;
   visibility: visible;
+  transform: translateY(-50%);
 }
-
-/* IMAGE STYLE */
-/* IMAGE STYLE */
-
-/* IMAGE STYLE */
-
-
-.vertical-content img {
-  width: 420px;
-
-  height: 300px;
-
-  object-fit: cover;
-
-  border-radius: 18px;
-
-  position: relative;
-
-  left: -140px;
-
-  top: -18px;
-
-  z-index: 6;
-
-  box-shadow:
-    0 18px 45px rgba(0,0,0,0.35);
-
-  transition:
-    transform 0.35s ease,
-    opacity 0.35s ease;
-}
-
-/* SLIGHT FLOAT EFFECT */
 
 .vertical-section:hover .vertical-content img {
-  transform: scale(1.03);
+  animation: imgSwingOnce 0.8s ease-out;
 }
-
-/* SLIGHT FLOAT EFFECT */
-
-.vertical-section:hover .vertical-content img {
-  transform: scale(1.03);
-}
-
-
-
-/* SLIGHT FLOAT EFFECT */
-
-.vertical-section:hover .vertical-content img {
-  transform: scale(1.03);
-}
-
-
-/* IMAGE SWING */
 
 @keyframes imgSwingOnce {
-
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-4deg);
-  }
-
-  60% {
-    transform: rotate(3deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+  0%   { transform: translateX(0px) rotate(0deg); }
+  25%  { transform: translateX(0px) rotate(-4deg); }
+  60%  { transform: translateX(0px) rotate(3deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
 }
 
-
-/* ================= RIGHT ICON ================= */
 .expand-icon {
   position: absolute;
-
   right: 60px;
-
   top: 50%;
-
-  transform: translateY(-50%);
-
+  transform: translateY(-50%) translateX(-10px);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   display: flex;
-
   align-items: center;
-
-  justify-content: center;}
-
-/* HOVER ICON */
-
-.vertical-section:hover .expand-icon {
-  background: rgba(255,255,255,0.2);
-
-  color: white;
+  justify-content: center;
+  background: #e6e6e6;
+  color: #002366;
+  font-size: 26px;
+  font-weight: bold;
+  z-index: 10;
+  transition: all 0.3s ease;
 }
 
-/* ================= BUTTON ================= */
+.vertical-section:hover .expand-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: translateY(-50%) translateX(-10px);
+}
 
-.vertical-btn-wrap {
-  text-align: center;
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 26px;
+  background: #002366;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  margin-top: 50px;
+.custom-btn:hover {
+  background: #1a3d8f;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn span {
+  transition: transform 0.3s ease;
+}
+
+.custom-btn:hover span {
+  transform: translateX(4px);
 }
 
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
-
   .vertical-section {
     min-height: auto;
-
-    padding: 30px 0;
-
-    background: transparent;
-  }
-
-  .vertical-section:hover {
     height: auto;
+    padding: 30px 0;
+    background: transparent;
   }
 
   .vertical-row {
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 20px;
-
     padding-left: 20px;
   }
 
   .vertical-content {
     position: relative;
-
     right: auto;
     top: auto;
-
     transform: none;
-
     opacity: 1;
     visibility: visible;
   }
 
-  /* IMAGE STYLE */
+  .vertical-section:hover .vertical-content {
+    transform: none;
+  }
 
-.vertical-content img {
-  width: 390px;
-  height: 290px;
+  .vertical-content img {
+    width: 390px !important;
+    height: 290px !important;
+    left: 0 !important;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+    animation: imgSwingOnce 0.8s ease-out;
+  }
 
-  object-fit: cover;
+  .sub-text {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    height: auto;
+  }
 
-  border-radius: 18px;
+  .expand-icon {
+    right: 16px;
+    top: 20px;
+    transform: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 
-  box-shadow:
-    0 18px 45px rgba(0,0,0,0.35);
-
-  animation: imgSwingOnce 0.8s ease-out;
-
-  transition: transform 0.35s ease;
+  .vertical-section:hover .expand-icon {
+    transform: none;
+  }
 }
-/* SLIGHT FLOAT EFFECT */
 
-.vertical-section:hover .vertical-content img {
-  transform: scale(1.03);
-}
-
-/* SLIGHT FLOAT EFFECT */
-
-.vertical-section:hover .vertical-content img {
-  transform: scale(1.03);
-}
+@media (max-width: 480px) {
+  .vertical-content img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 200px !important;
+  }
 }
 
 /* ================= PROJECT SECTION ================= */

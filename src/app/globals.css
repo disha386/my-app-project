@@ -1739,7 +1739,6 @@ html, body {
 
 /* ================= CSR SECTION ================= */
 
-/* ================= CSR SECTION ================= */
 
 .csr-wrapper {
   width: 100%;
@@ -2902,52 +2901,32 @@ html, body {
 }
 .what-we-do-content {
   width: 100%;
-
   text-align: center;
-
   margin-top: 70px;
-
   padding: 0 20px;
-
   box-sizing: border-box;
 
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
+
+
 }
 
 .what-we-do-content h2 {
-  font-size: 48px;
-
+ font-family: "Playfair Display", serif !important;
+  font-size: 38px;
   font-weight: 600;
-
   color: #0b2a5b;
-
-  margin-bottom: 18px;
-
-  font-family: Arial, Helvetica, sans-serif;
-
+  margin-bottom: 14px;
   line-height: 1.2;
-
-  text-align: center;
 }
 
 .what-we-do-content p {
   font-size: 18px;
-
-  line-height: 2.2;
-
+  line-height: 1.8;
   color: #6b7a99;
-
   max-width: 1000px;
-
   margin: 0 auto;
-
-  font-family: Arial, Helvetica, sans-serif;
-
-  text-align: center;
 }

@@ -448,7 +448,7 @@ export default function BlogPage() {
       <p className="blog-description">
         In the ever-evolving and complex construction landscape,
         accuracy matters everywhere. Be it precise elevation
-        mapping (extraction of 2D drawings from 3D...
+        mapping or extraction of 2D drawings from 3D...
       </p>
 
     </div>
@@ -982,8 +982,40 @@ export default function BlogPage() {
   </div>
 
   {/* RIGHT SIDE EMPTY */}
-  <div className="events-right"></div>
+<div className="events-right">
 
+  <div className="about-box">
+
+    <div className="about-title-row">
+
+      <h2 className="about-title">
+        About Us
+      </h2>
+
+      <div className="about-line"></div>
+
+    </div>
+
+    <p className="about-text">
+      We are the global leader in providing BIM solutions to the international market.
+      Our team has successfully executed BIM projects in 43+ countries spread across 6 continents.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris in leo pulvinar commodo.
+      Donec eget metus ut sem blandit dictum. Etiam fermentum sed nunc ut ullamcorper.
+      Praesent leo orci, fringilla ac ante nec, ultrices tempor ex. Mauris placerat,
+      nunc eu molestie ultricies, justo massa finibus nisi, et vehicula velit libero a est.
+    </p>
+   {/* 🔵 BLUE LINE (ADD HERE) */}
+    <div className="about-blue-line"></div>
+      {/* 🖼️ IMAGE ONLY (NO HEADING) */}
+    <div className="about-image-card">
+      <img
+        src="https://res.cloudinary.com/dnodncslz/image/upload/v1780398885/d-img-01_ymevf1.webp"
+        alt="About"
+      />
+    </div>
+  </div>
+
+</div>
 </section>
     </>
   );

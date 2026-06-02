@@ -258,14 +258,14 @@ export default function GlobalPresence() {
           </div>
 
           <div className="global-right">
-            <div className="global-right">
-         <img
-         src="https://res.cloudinary.com/dnodncslz/image/upload/v1776670560/download_1_o23tg1.png"
-         alt="Global Presence"
-         className="global-image"
-        />
-        </div>
-          </div>
+  <div className="global-img-wrap">
+    <img
+      src="https://res.cloudinary.com/dnodncslz/image/upload/v1776670560/download_1_o23tg1.png"
+      alt="Global Presence"
+      className="global-image"
+    />
+  </div>
+</div>
 
         </div>
       </div>

@@ -1013,6 +1013,14 @@ export default function BlogPage() {
         alt="About"
       />
     </div>
+
+  {/* 🔵 BLUE LINE (AFTER IMAGE) */}
+  <div className="about-blue-line"></div>
+{/* 📦 TABS */}
+<div className="about-tabs">
+  <div className="about-tab">Latest Post</div>
+  <div className="about-tab">Popular Post</div>
+</div>
   </div>
 
 </div>

@@ -3494,3 +3494,31 @@ html, body {
 
   object-fit: cover;   /* keeps clean crop if needed */
 }
+.about-tabs {
+  display: flex;
+  gap: 105px;
+  margin-top: 14px;
+}
+
+.about-tab {
+  display: inline-block;
+
+  background: #546791;   /* blue background */
+  color: #fff;           /* white text */
+
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 15px 28px;    /* bigger size */
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  border: none;
+}
+
+/* hover effect (slightly darker) */
+.about-tab:hover {
+  background: #3f547a;
+}

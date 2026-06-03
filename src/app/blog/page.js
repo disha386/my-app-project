@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 
 
@@ -32,6 +35,8 @@ const BlogCard = ({ image, date }) => (
 
 
 export default function BlogPage() {
+  const [activeTab, setActiveTab] = useState("latest");
+
   return (
     <>
       {/* BREADCRUMB */}
@@ -1015,16 +1020,29 @@ export default function BlogPage() {
     </div>
 
   {/* 🔵 BLUE LINE (AFTER IMAGE) */}
-  <div className="about-blue-line"></div>
-{/* 📦 TABS */}
+<div className="about-blue-line"></div>
+
 <div className="about-tabs">
-  <div className="about-tab">Latest Post</div>
-  <div className="about-tab">Popular Post</div>
-</div>
+  <div
+    className={`about-tab ${activeTab === "latest" ? "active" : ""}`}
+    onClick={() => setActiveTab("latest")}
+  >
+    Latest Post
   </div>
 
+  <div
+    className={`about-tab ${activeTab === "popular" ? "active" : ""}`}
+    onClick={() => setActiveTab("popular")}
+  >
+    Popular Post
+  </div>
 </div>
+
+</div> {/* about-box */}
+</div> {/* events-right */}
+
 </section>
-    </>
-  );
+
+</>
+);
 }

@@ -1038,6 +1038,183 @@ export default function BlogPage() {
   </div>
 </div>
 
+{activeTab === "latest" && (
+  <div className="latest-posts">
+
+    <div className="latest-post-item">
+      <img
+        src="https://res.cloudinary.com/dnodncslz/image/upload/v1776680785/BIM-Clash-Detection-A-Detailed-Guide_uiag29.webp"
+        alt=""
+      />
+      <div className="latest-post-content">
+        <h4>BIM Clash Detection: A Detailed Guide</h4>
+        <span>05 Sep, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img
+        src="https://res.cloudinary.com/dnodncslz/image/upload/v1776429342/Landscape-Architecture_Definitions-Significance_1_wfviab.webp"
+        alt=""
+      />
+      <div className="latest-post-content">
+        <h4>Landscape Architecture: Definitions & Significance</h4>
+        <span>11 Sep, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img
+        src="https://res.cloudinary.com/dnodncslz/image/upload/v1776429076/Construction-Asset-Management-A-Complete-Guide_aeeewh.webp"
+        alt=""
+      />
+      <div className="latest-post-content">
+        <h4>Construction Asset Management: Complete Guide</h4>
+        <span>18 Sep, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img
+        src="https://res.cloudinary.com/dnodncslz/image/upload/v1776429391/IoT-in-Construction_n6pjew.webp"
+        alt=""
+      />
+      <div className="latest-post-content">
+        <h4>IoT in Construction: Top Benefits & Applications</h4>
+        <span>22 Sep, 2025</span>
+      
+      </div>
+    </div>
+
+  </div>
+)}
+
+{activeTab === "popular" && (
+  <div className="latest-posts">
+
+    <div className="latest-post-item">
+      <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1780310493/Lidar-Vs-Laser_What-is-the-difference_axgwvy.webp" alt="" />
+      <div className="latest-post-content">
+        <h4>Laser Scanning: Lidar Vs Laser – Differences</h4>
+        <span>02 Nov, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1776680987/IoT-in-Construction_1_jgbehm.webp" alt="" />
+      <div className="latest-post-content">
+        <h4>IoT in Construction: Top Benefits, Use-Cases & Applications</h4>
+        <span>08 Nov, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1776680769/Whats-the-Difference-Between-VRV-and-VRF_zmjs2x.webp" alt="" />
+      <div className="latest-post-content">
+        <h4>What is VRF HVAC? VRV vs. VRF: What Is the Difference?</h4>
+        <span>14 Nov, 2025</span>
+      </div>
+    </div>
+
+    <div className="latest-post-item">
+      <img src="https://res.cloudinary.com/dnodncslz/image/upload/v1776680825/Bar-Bending-Schedule-in-Construction_uhfsek.webp" alt="" />
+      <div className="latest-post-content">
+        <h4>Bar Bending Schedule in Construction</h4>
+        <span>20 Nov, 2025</span>
+      </div>
+    </div>
+
+  </div>
+
+
+)}
+
+<div className="about-blue-line"></div>
+
+
+{/* Categories Heading */}
+<div className="category-heading">
+  <span className="category-title">Categories</span>
+  <div className="category-line"></div>
+</div>
+
+<div className="category-list">
+  <div className="category-item">2025 (68)</div>
+  <div className="category-item">2024 (2)</div>
+  <div className="category-item">2017 (3)</div>
+  <div className="category-item">2016 (1)</div>
+  <div className="category-item">2015 (1)</div>
+</div>
+
+{/* BLUE LINE */}
+<div className="about-blue-line"></div>
+{/* Portfolio Heading */}
+<div className="category-heading">
+  <span className="category-title">Portfolio</span>
+  <div className="category-line"></div>
+</div>
+
+{/* Portfolio Image */}
+
+<div className="portfolio-image">
+  <img
+    src="https://res.cloudinary.com/dnodncslz/image/upload/v1780555135/engineers-img_een567.webp"
+    alt="Portfolio"
+  />
+
+  <div className="portfolio-overlay">
+
+    <h3 className="portfolio-text">
+      Take a Look at Our
+      <br />
+      Service
+    </h3>
+
+    <div className="portfolio-btn">
+      <span>Visit Our Service</span>
+
+      <div className="portfolio-btn-circle">
+        →
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+{/* Second Portfolio Image */}
+<div className="portfolio-image">
+  <img
+    src="https://res.cloudinary.com/dnodncslz/image/upload/v1780557704/image-501_lkawo4.webp"
+    alt="Case Studies"
+  />
+
+  <div className="portfolio-overlay">
+    <h3 className="portfolio-text">
+      Successful
+      <br />
+      Case Studies
+    </h3>
+
+    <div className="portfolio-btn">
+      <span>Visit Our Service</span>
+      <div className="portfolio-btn-circle">→</div>
+    </div>
+  </div>
+</div>
+
+<div className="about-blue-line"></div>
+{/* Yellow Text */}
+<h3 className="estimate-heading">
+  Looking for a Perfect Estimate?
+</h3>
+<div className="estimate-card">
+  <img
+    src="https://res.cloudinary.com/dnodncslz/image/upload/v1780565422/stats-img-03_lxcykm.webp"
+    alt="Estimate"
+  />
+</div>
+
 </div> {/* about-box */}
 </div> {/* events-right */}
 
